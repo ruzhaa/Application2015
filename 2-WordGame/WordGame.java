@@ -15,32 +15,32 @@ public class WordGame extends Movement {
 						if (moveToRight(matrix, searchWord, i, j)) {
 							counterWord++;
 						}
-					}else if ((j <= horizontal) && (i <= vertically)) {
+					} else if ((j <= horizontal) && (i <= vertically)) {
 						if (moveUpLeftToDownRight(matrix, searchWord, i, j)) {
 							counterWord++;
 						}
-					}else if (j >= searchWord.length() - 1) {
+					} else if (j >= searchWord.length() - 1) {
 						if (moveToLeft(matrix, searchWord, i, j)) {
 							counterWord++;
 						}
-					}else if ((j >= searchWord.length() - 1)
+					} else if ((j >= searchWord.length() - 1)
 							&& (i >= searchWord.length() - 1)) {
 						if (moveDownRightToUpLeft(matrix, searchWord, i, j)) {
 							counterWord++;
 						}
-					}else if (i <= vertically) {
+					} else if (i <= vertically) {
 						if (moveDown(matrix, searchWord, i, j)) {
 							counterWord++;
 						}
-					}else if ((i <= vertically) && (j >= searchWord.length() - 1)) {
+					} else if ((i <= vertically) && (j >= searchWord.length() - 1)) {
 						if (moveUpRightToDownLeft(matrix, searchWord, i, j)) {
 							counterWord++;
 						}
-					}else if (i >= searchWord.length() - 1) {
+					} else if (i >= searchWord.length() - 1) {
 						if (moveUp(matrix, searchWord, i, j)) {
 							counterWord++;
 						}
-					}else if ((i >= searchWord.length() - 1) && (j <= horizontal)) {
+					} else if ((i >= searchWord.length() - 1) && (j <= horizontal)) {
 						if (moveDownLeftToUpRight(matrix, searchWord, i, j)) {
 							counterWord++;
 						}
