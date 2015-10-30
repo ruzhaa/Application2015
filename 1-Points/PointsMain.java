@@ -15,7 +15,7 @@ public class PointsMain {
 
 		System.out.println(cord.direction(stringDirection));
 
-//		scanner.close();
-//		scannerStr.close();
+		scanner.close();
+		scannerStr.close();
 	}
 }
